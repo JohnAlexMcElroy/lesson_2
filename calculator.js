@@ -21,6 +21,13 @@ let operation = READLINE.question();
 let output;
 if (operation === "1") {
   output = Number(number1) + Number(number2);
+} else if (operation === "2") {
+  output = Number(number1) - Number(number2);
+} else if (operation === "3") {
+  output = Number(number1) * Number(number2);
+} else if (operation === "4") {
+  output = Number(number1) / Number(number2);
+} else {
+  console.log("Please select one of the four options.");
 }
-
 console.log(`The result is ${output}.`)
